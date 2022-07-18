@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script>
+
+            // Toggles visibility of greeting
+            function blink()
+            {
+                let button = document.querySelector('button');
+                if (button.style.visibility == 'hidden')
+                {
+                    button.style.visibility = 'visible';
+                }
+                else
+                {
+                    button.style.visibility = 'hidden';
+                }
+            }
+
+            // Blink every 500ms
+            window.setInterval(blink, 500);
+
+        </script>
+        <title>main</title>
+    </head>
+    <body>
+        <nav>
+            <div class="logo" onclick="window.location.href='text.html';">Logo</div>
+        <ul>
+            <li><a onclick="window.location.href='index.html';">main</a></li>
+            <li><a onclick="window.location.href='photo.html';">photo</a></li>
+            <li><a onclick="window.location.href='video.html';">video</a></li>
+            <li><a onclick="window.location.href='text.html';">text</a></li>
+        </ul>
+        </nav>
+        <main>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  MENU
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="photo.html">photo</a></li>
+                  <li><a class="dropdown-item" href="video.html">video</a></li>
+                  <li><a class="dropdown-item" href="text.html">text</a></li>
+                </ul>
+              </div>
+        <img src="https://news.virginia.edu/sites/default/files/Header_Brennan_Gilmore_SS_01.jpg" style="width:500px;height:600px;">
+        <div class="media">
+            <div class="h3">That is, until <b>Gilmore</b> looked through his <strong>viewfinder</strong> and saw the head of the <i>Homer</i> statue smack in the middle of the frame.</div>
+            <div class="price"><u>Click on the buttons</u></div>
+            <div class="btn-cont">
+                <div class="btn-m" onclick="window.location.href='photo.html';">photo</div>
+                <button onclick="window.location.href='video.html';">video</button>
+            </div>
+        </div>
+        </main>
+    </body>
+</html>
